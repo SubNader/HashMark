@@ -10,7 +10,13 @@ results = {}
 
 # Fetch iterations and step from user
 iterations = int(raw_input("Iterations: "))
+while iterations < 1 or iterations > 1000000:
+    iterations = int(raw_input("Please enter a valid value for the number of iterations (1-1000000): "))
+
 step = int(raw_input("Step: "))
+while step < 1 or step > 1000000:
+    step = int(raw_input("Please enter a valid value for the step (1-1000000): "))
+
 print "\nBenchmarking in progress..\n"
 
 # MD5
