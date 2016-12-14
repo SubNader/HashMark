@@ -14,4 +14,4 @@ Hashing algorithms benchmark in Python
 - SHA-512
 
 ## Screenshot
-![HashMark](http://i.imgur.com/Wufia7b.png)
+![HashMark](http://i.imgur.com/EJQNAZv.png)
