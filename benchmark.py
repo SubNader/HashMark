@@ -67,11 +67,11 @@ for i in range(6):
     print algo[i]
     for j in range (iterations):
         print (j+1)*step, 'iterations in', results[i,(j+1)*step]*pow(10,3), 'ms'
-        plot.plot((j+1)*step, results[i,(j+1)*step]*pow(10,3),colors[i]+'.', label=str(algo[i]) if j == 0 else "")
+        plot.plot((j+1)*step, results[i,(j+1)*step]*pow(10,3),colors[i]+'o', label=str(algo[i]) if j == 0 else "")
     print '\n'
 plot.xlabel('Iterations')
-plot.ylabel('Time execution time in milliseconds')
-plot.title('Hash functions benchmark',fontsize=20,color='blue')
+plot.ylabel('Execution time in milliseconds')
+plot.title('HashMark', fontsize=40, color='white')
 plot.legend(loc=2)
 plot.grid(True)
 plot.show()
